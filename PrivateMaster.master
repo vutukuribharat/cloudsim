@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PrivateMaster.master.cs" Inherits="PrivateMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Online iCloud Services</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+<body>
+     <div id="bg">
+    <img src="images/cloud.jpg" alt="home">
+</div>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="">Onlile<span class="logo_colour"> iCloud Services</span></a></h1>
+          
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="UserDetails.aspx">User Details</a></li> 
+               <li><a href="File_token_requests.aspx">FileToken requests</a></li>       
+              <li><a href="Rights.aspx">Update requests</a></li>            
+            <li><a href="#">User</a>
+              <ul>
+                <li><a href="Privatelogin.aspx">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+ <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+         <h3>Latest News</h3>
+          <h4>New CLoud Launched</h4>
+          <h5>December 1st, 2015</h5>
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+           <li><a href="#">HP Cloud APIs</a></li>
+            <li><a href="#">HP Helion Public Cloud</a></li>
+            <li><a href="#">One cloud, many users</a></li>
+            <li><a href="#">Our vision for the cloud</a></li>
+          </ul>
+        </div>
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+           <li><a href="#">HP Cloud APIs</a></li>
+            <li><a href="#">HP Helion Public Cloud</a></li>
+            <li><a href="#">One cloud, many users</a></li>
+            <li><a href="#">Our vision for the cloud</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+         <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('ul.sf-menu').sooperfish();
+          $('.top').click(function () { $('html, body').animate({ scrollTop: 0 }, 'fast'); return false; });
+      });
+  </script>
+</body>
+</html>
